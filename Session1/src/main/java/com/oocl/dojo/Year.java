@@ -1,12 +1,13 @@
 package com.oocl.dojo;
 
 public class Year {
+    int year;
 
     public Year(int year) {
-
+        this.year = year;
     }
 
     public boolean isLeapYear() {
-        return true;
+        return this.year % 4 == 0;
     }
 }
