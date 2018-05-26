@@ -23,5 +23,11 @@ public class LeapYearTest {
         boolean isLeapYear = year.isLeapYear();
         Assert.assertTrue(isLeapYear);
     }
+    @Test
+    public void year_1900_is_not_a_leap_year_test() {
+        Year year = new Year(1900);
+        boolean isLeapYear = year.isLeapYear();
+        Assert.assertFalse(isLeapYear);
+    }
 
 }
